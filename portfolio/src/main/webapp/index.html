@@ -2,18 +2,82 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Thienan (Professional)</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ff837605de.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
+    <header>
+        <h1>Thienan Tran</h1>
+    </header>
+    <nav>
+        <a href="index.html">Professional</a>
+        <a href="casual.html">Casual</a>
+        <a href="wall.html">Wall</a>
+    </nav>
+    <main>
+        <section class="about-me">
+            <h2>Who is Thienan Tran?</h2>
+            <p>Computer science major at Boston University.</p>
+        </section>
+        <section class="work">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <span>Volunteer Teacher's Aide</span>
+                    <p>Helped summer school teachers educate elementary school kids.</p>
+                </li>
+                <li>
+                    <span>Maintenance Worker</span>
+                    <p>Washed floors of Pompei school, cleaned walls, pick up trash outside of parish area.</p>
+                </li>
+                <li>
+                    <span>Food Service Worker</span>
+                    <p>Prepared and served food to Boston University dining hall visitors.</p>
+                </li>
+                <li>
+                    <span>Office Assistant</span>
+                    <p>Answered emails, phone calls, and questions about events, alumni, and services.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="portfolio">
+            <h2>Coding Projects</h2>
+            <ul>
+                <li>
+                    <span>OCaml Interpreter</span>
+                    <p>CS320 class project. The interpeter parsed through a string of commands in a stack language to
+                        generate commands in a term language. These commands were then executed. Also could translate
+                        commands in term language to stack language.
+                    </p>
+                </li>
+
+                <li>
+                    <span><a href="https://thienantran010.github.io/fortune%20cookie/index.html">Fortune Cookie</a></span>
+                    <p>Gives you a fortune.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Classes I've taken so far: </h2>
+            <ul class="class-list">
+                <li>CS112 - Intro to Computer Science II</li>
+                <li>CS131 - Combinatoric Structures</li>
+                <li>CS132 - Geometrical Algorithms</li>
+                <li>CS210 - Computer Systems</li>
+                <li>CS237 - Probability in Computing</li>
+                <li>CS320 - Concepts of Programming Languages</li>
+                <li>CS330 - Introduction to Analysis of Algorithms</li>
+            </ul>
+        </section>
+    
+    <footer>
+        <a href="mailto:ttran@bu.edu">Email me! ttran010@bu.edu</a>
+        <a href="https://github.com/thienantran010"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/thienan-tran-35176620b/"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+
   </body>
 </html>
