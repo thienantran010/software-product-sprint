@@ -26,3 +26,11 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+function randomPicture () {
+    let number = Math.floor(Math.random() * 21);
+    let newSrc = `images/me/me-${number}.jpg`;
+    let img = document.getElementById('selfie');
+    img.src = newSrc;
+}
+
