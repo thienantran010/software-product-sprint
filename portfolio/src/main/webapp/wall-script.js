@@ -27,10 +27,24 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
-function randomPicture () {
-    let number = Math.floor(Math.random() * 21);
-    let newSrc = `images/me/me-${number}.jpg`;
-    let img = document.getElementById('selfie');
-    img.src = newSrc;
+
+function onSubmit (e) {
+    e.preventDefault();
+    let textArea = document.getElementById('wall-input');
+    let message = textArea.value;
+    console.log(message);
+    let p = document.createElement('p');
+    let text = document.createTextNode(message);
+    p.appendChild(text);
+
+    let wall = document.getElementById('wall');
+    wall.appendChild(p);
+
+    message = "";
+
+    /*How to keep track of existing messages? backend - out of scope for this week?*/
+
 }
 
+let form = document.querySelector('form');
+form.addEventListener("submit", onSubmit);
