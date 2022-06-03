@@ -1,0 +1,28 @@
+section {
+    margin: 0 auto;
+}
+
+img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
+section.hobbies img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+li {
+    text-align: center;
+}
+
+button {
+    display: block;
+}
