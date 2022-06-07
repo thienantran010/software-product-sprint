@@ -18,7 +18,8 @@ form.addEventListener("submit", onSubmit);
 
 async function showServerString() {
     const responseFromServer = await fetch('/hello');
-    const textFromServer = await responseFromServer.text();
+    const quoteList = await responseFromServer.json();
+    let number = Math.floor(Math.random() * 3);
     const serverStringContainer = document.getElementById('server-string-container');
-    serverStringContainer.innerHTML = textFromServer;
+    serverStringContainer.innerText = quoteList[number];
 }
