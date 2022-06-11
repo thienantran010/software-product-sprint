@@ -1,0 +1,47 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/me/me-16.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+@keyframes slide-in {
+    from {
+        margin-right: -100%;
+        opacity: 0;
+
+    }
+    to {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+h1 {
+    position: relative;
+    opacity: 0;
+    color: white;
+    font-size: 10rem;
+    margin-top: 0;
+}
+
+.slide-in-animation {
+    animation-name: slide-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+nav {
+    display: none;
+}
