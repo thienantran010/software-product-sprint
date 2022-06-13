@@ -1,11 +1,19 @@
 :root {
     font-size: 16px;
+
+    --send-bg: #0B93F6;
+    --send-color: white;
+    --receive-bg: #E5E5EA;
+    --receive-text: black;
+    --page-background: white;
 }
 
 body {
     margin: 0;
+    font-family: Helvetica;
 }
 
+/* header stuff */
 header {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/me/me-16.jpg");
     background-attachment: fixed;
@@ -45,3 +53,91 @@ h1 {
 nav {
     display: none;
 }
+
+/*bio stuff, copied and pasted from Samuel Kraft's codepen https://codepen.io/samuelkraft/pen/kYrjwX*/
+.section.bio {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    max-width: 50vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--page-background);
+}
+
+.section.bio > * {
+    max-width: 40vw;
+    word-wrap: break-word;
+    margin-bottom: 12px;
+    line-height: 24px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.send {
+    color: var(--send-color); 
+	background: var(--send-bg);
+	align-self: flex-end;
+}
+
+.send::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    right: -7px;
+    width: 20px;
+    background-color: var(--send-bg);
+    border-bottom-left-radius: 16px 14px;
+}
+
+.send::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    right: -26px;
+    width: 26px;
+    background-color: var(--page-background);
+    border-bottom-left-radius: 10px;
+}
+
+.receive {
+    background: var(--receive-bg);
+    color: black;
+    align-self: flex-start;
+}
+
+.receive::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    left: -7px;
+    width: 20px;
+    background-color: var(--receive-bg);
+    border-bottom-right-radius: 16px 14px;
+}
+
+.receive::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    left: -26px;
+    width: 26px;
+    background-color: var(--page-background);
+    border-bottom-right-radius: 10px;
+}
+
+/* code copied from w3schools at https://www.w3schools.com/howto/howto_css_circles.asp" */
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  

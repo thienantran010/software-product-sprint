@@ -1,3 +1,5 @@
+import "https://github.com/flackr/scroll-timeline"
+
 function addClass(element, className) {
     element.classList.add(className);
 }
