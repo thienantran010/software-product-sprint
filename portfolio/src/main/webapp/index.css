@@ -50,10 +50,12 @@ h1 {
     animation-fill-mode: forwards;
 }
 
+/*
 nav {
     display: none;
 }
 
+*/
 /*bio stuff, copied and pasted from Samuel Kraft's codepen https://codepen.io/samuelkraft/pen/kYrjwX*/
 .section.bio {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -141,6 +143,10 @@ nav {
     display: inline-block;
   }
 
+.dark-dot {
+    background-color: red;
+}
+
   .hide {
       display: none;
   }
@@ -148,3 +154,26 @@ nav {
   .show {
       display: block;
   }
+
+  /* portfolio section */
+  .portfolio {
+      background-color: #202A44;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 150px);
+      row-gap: 3rem;
+      column-gap: 3rem;
+      padding: 3rem;
+  }
+
+  .img-container {
+      width: 150px;
+      height: 150px;
+  }
+
+  .portfolio img {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+
