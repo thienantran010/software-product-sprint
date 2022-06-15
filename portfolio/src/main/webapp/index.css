@@ -160,10 +160,11 @@ nav {
       background-color: #202A44;
       color: white;
       display: grid;
-      grid-template-columns: repeat(auto-fill, 150px);
+      grid-template-columns: repeat(auto-fit, 150px);
       row-gap: 3rem;
       column-gap: 3rem;
       padding: 3rem;
+      justify-content: center;
   }
 
   .img-container {
@@ -177,3 +178,56 @@ nav {
       overflow: hidden;
   }
 
+/* Experience */
+.exp {
+    margin: 3rem auto;
+}
+
+.exp h2 {
+    text-align: center;
+}
+
+.exp ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding-left: 0;
+}
+
+.exp li {
+    width: 80vw;
+    height: auto;
+    margin: 3rem;
+}
+
+.exp img {
+    width: 20rem;
+}
+
+.left {
+    float: left;
+    margin-right: 3rem;
+}
+
+.right {
+    float: right;
+    margin-left: 3rem;
+}
+
+@media (max-width: 700px) {
+    .exp li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exp img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .text-block {
+        margin: 3rem 0;
+    }
+}

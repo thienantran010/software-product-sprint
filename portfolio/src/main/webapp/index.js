@@ -38,17 +38,17 @@ window.onload =  async function () {
                     async function dotsAnim () {
                     
                         dotsArray[0].style.backgroundColor = "#63666A";
-                        await delay(100);
+                        await delay(250);
                         dotsArray[0].style.backgroundColor = "#bbb"; //original dot color
-                        await delay(100);
+                        await delay(250);
                         dotsArray[1].style.backgroundColor = "#63666A";
-                        await delay(100);
+                        await delay(250);
                         dotsArray[1].style.backgroundColor = "#bbb"; //original dot color
-                        await delay(100);
+                        await delay(250);
                         dotsArray[2].style.backgroundColor = "#63666A";
-                        await delay(100);
+                        await delay(250);
                         dotsArray[2].style.backgroundColor = "#bbb"; //original dot color
-                        await delay(100);
+                        await delay(250);
 
                         removeClass(dots, "show");
                         addClass(dots, "hide");
