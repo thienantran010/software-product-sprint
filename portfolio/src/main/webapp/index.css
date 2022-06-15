@@ -156,7 +156,7 @@ nav {
   }
 
   /* portfolio section */
-  .portfolio {
+  .portfolio, .testimonials {
       background-color: #202A44;
       color: white;
       display: grid;
@@ -230,4 +230,53 @@ nav {
     .text-block {
         margin: 3rem 0;
     }
+}
+
+/* testimonials section */
+
+.card {
+    width: 150px;
+    height: 150px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .card__content {
+    transform: rotateY(0.5turn);
+}
+
+.card__content {
+    position: relative;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    height: 100%;
+}
+
+.card__front, .card__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backface-visibility: hidden;
+}  
+
+.card__front {
+    background: lightblue;
+
+}
+
+.card__back {
+    background: pink;
+    transform: rotateY(0.5turn);
+}
+
+/* the grid for testimonials section was defined with the portfolio section */
+.testimonials {
+    justify-content: center;
 }
