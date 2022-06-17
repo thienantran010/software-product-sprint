@@ -46,15 +46,15 @@ input[type="submit"] {
 }
 
 /* posts */
-.div {
+.post {
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
+    padding:  0 3rem;
 }
 
 .name, .timestamp {
     color: gray;
-    align-self: right;
 }
 
 /* footer */

@@ -7,22 +7,13 @@ function removeClass(element, className) {
     element.classList.remove(className);
 }
 
-
-async function showServerString() {
-    const responseFromServer = await fetch('/hello');
-    const quoteList = await responseFromServer.json();
-    let number = Math.floor(Math.random() * 3);
-    const serverStringContainer = document.getElementById('server-string-container');
-    serverStringContainer.innerText = quoteList[number];
-}
-
 async function showWall() {
     const responseFromServer = await fetch('/show-post');
     const postList = await responseFromServer.json();
 
     postList.forEach((post) => {
-        const post = document.createElement("div");
-        addClass(post, "post");
+        const postNode = document.createElement("div");
+        addClass(postNode, "post");
         const message = document.createElement("p");
         addClass(message, "message");
         const name = document.createElement("span");
@@ -38,12 +29,12 @@ async function showWall() {
         name.appendChild(nameTextNode);
         timestamp.appendChild(timestampTextNode);
 
-        post.appendChild(message);
-        post.appendChild(name);
-        post.appendChild(timestamp);
+        postNode.appendChild(message);
+        postNode.appendChild(name);
+        postNode.appendChild(timestamp);
 
         const wall = document.getElementById("wall");
-        wall.appendChild(post);
+        wall.appendChild(postNode);
     })
 }
 
