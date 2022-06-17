@@ -1,0 +1,77 @@
+:root {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    font-size: 2rem;
+    height: 400px;
+}
+
+#name {
+    height: 2rem;
+    font-size: 2rem;
+}
+
+label[for="wall-input"] {
+    margin-top: 2rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+#wall-input {
+    width: max-width;
+    height: 20rem;
+    resize: none;
+    font-size: 2rem;
+}
+
+input[type="submit"] {
+    margin-top: 2rem;
+    width: 3rem;
+}
+
+/* posts */
+.div {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.name, .timestamp {
+    color: gray;
+    align-self: right;
+}
+
+/* footer */
+footer {
+    background: #0B0B45;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+footer a {
+    color: white;
+    font-size: 2rem;
+}
+
+footer a:hover {
+    color: lightblue;
+}

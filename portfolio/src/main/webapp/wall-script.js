@@ -1,3 +1,13 @@
+/*helper functions */
+function addClass(element, className) {
+    element.classList.add(className);
+}
+
+function removeClass(element, className) {
+    element.classList.remove(className);
+}
+
+
 async function showServerString() {
     const responseFromServer = await fetch('/hello');
     const quoteList = await responseFromServer.json();
@@ -11,9 +21,14 @@ async function showWall() {
     const postList = await responseFromServer.json();
 
     postList.forEach((post) => {
+        const post = document.createElement("div");
+        addClass(post, "post");
         const message = document.createElement("p");
+        addClass(message, "message");
         const name = document.createElement("span");
+        addClass(name, "name");
         const timestamp = document.createElement("span");
+        addClass(timestamp, "timestamp");
 
         const messageTextNode = document.createTextNode(post.message);
         const nameTextNode = document.createTextNode(post.name);
@@ -23,9 +38,12 @@ async function showWall() {
         name.appendChild(nameTextNode);
         timestamp.appendChild(timestampTextNode);
 
-        document.body.appendChild(message);
-        document.body.appendChild(name);
-        document.body.appendChild(timestamp);
+        post.appendChild(message);
+        post.appendChild(name);
+        post.appendChild(timestamp);
+
+        const wall = document.getElementById("wall");
+        wall.appendChild(post);
     })
 }
 

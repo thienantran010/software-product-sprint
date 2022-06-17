@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thienan's Wall</title>
+    <link rel="stylesheet" href="wall.css">
     <script src="https://kit.fontawesome.com/ff837605de.js" crossorigin="anonymous"></script>
 </head>
 <body onload="showServerString()">
-    <nav>
-        <a href="index.html">Professional</a>
-        <a href="casual.html">Casual</a>
-        <a href="wall.html">Wall</a>
-        <a href="contact-me.html">Contact Me</a>
-    </nav>
+    <h1>Leave a message on the wall!</h1>
     <form action="/post" method="POST">
-        <h1>Leave a message on the wall!</h1>
         <label for="name">Name: </label>
         <input id="name" name="name" type="text">
         <label for="wall-input">Message: </label>
@@ -22,7 +17,23 @@
         <input type="submit" value="Post!">
     </form>
 
-    <div id="wall"></div>
+    <div id="wall">
+        <div class="post">
+            <p class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore eum, cum sit dolor officiis quae reiciendis nobis deserunt maxime molestiae velit, amet cumque ad! Eveniet accusamus deserunt nostrum nesciunt illo.</p>
+            <span class="name">joji</span>
+            <span class="timestamp">123456789</span>
+        </div>
+        <div class="post">
+            <p class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore eum, cum sit dolor officiis quae reiciendis nobis deserunt maxime molestiae velit, amet cumque ad! Eveniet accusamus deserunt nostrum nesciunt illo.</p>
+            <span class="name">joji</span>
+            <span class="timestamp">123456789</span>
+        </div>
+        <div class="post">
+            <p class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore eum, cum sit dolor officiis quae reiciendis nobis deserunt maxime molestiae velit, amet cumque ad! Eveniet accusamus deserunt nostrum nesciunt illo.</p>
+            <span class="name">joji</span>
+            <span class="timestamp">123456789</span>
+        </div>
+    </div>
 
     <div id="server-string-container"></div>
 
@@ -30,6 +41,8 @@
         <a href="mailto:ttran@bu.edu">Email me! ttran010@bu.edu</a>
         <a href="https://github.com/thienantran010"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/thienan-tran-35176620b/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="contact-me.html">Contact Me</a>
+        <a href="index.html">Home</a>
     </footer>
 </body>
 <script src="wall-script.js"></script>
