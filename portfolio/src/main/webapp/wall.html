@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thienan's Wall</title>
+    <link rel="stylesheet" href="wall.css">
     <script src="https://kit.fontawesome.com/ff837605de.js" crossorigin="anonymous"></script>
 </head>
-<body onload="showServerString()">
-    <nav>
-        <a href="index.html">Professional</a>
-        <a href="casual.html">Casual</a>
-        <a href="wall.html">Wall</a>
-        <a href="contact-me.html">Contact Me</a>
-    </nav>
-    <form>
-        <label for="wall-input"><h1>Leave a message on the wall: </h1></label>
+<body>
+    <h1>Leave a message on the wall!</h1>
+    <form action="/post" method="POST">
+        <label for="name">Name: </label>
+        <input id="name" name="name" type="text">
+        <label for="wall-input">Message: </label>
         <textarea id="wall-input" name="wall-input"></textarea>
         <input type="submit" value="Post!">
     </form>
 
-    <div id="wall"></div>
-
-    <div id="server-string-container"></div>
+    <div id="wall">
+    </div>
 
     <footer>
         <a href="mailto:ttran@bu.edu">Email me! ttran010@bu.edu</a>
         <a href="https://github.com/thienantran010"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/thienan-tran-35176620b/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="contact-me.html">Contact Me</a>
+        <a href="index.html">Home</a>
     </footer>
 </body>
 <script src="wall-script.js"></script>

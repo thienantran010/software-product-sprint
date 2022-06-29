@@ -3,79 +3,170 @@
   <head>
     <meta charset="UTF-8">
     <title>Thienan (Professional)</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/ff837605de.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
-        <div class="text-block intro">
-            <h1>Hey! I'm <span>Thienan Tran</span>.</h1>
-            <p>I'm currently a third-year computer science major at 
-                Boston University. I've just started to dip my feet into
-                web development and I'm currently loving it. Right now
-                I'm interested in Web Animations API and Scroll Timeline API
-                to bring brilliant effects to my work.</p>
-        </div>
-        <img src="images/me/me-5.jpg">
+        <h1>Hi! I'm Thienan.</h1>
     </header>
-    <nav>
-        <a href="index.html">Professional</a>
-        <a href="casual.html">Casual</a>
-        <a href="wall.html">Wall</a>
-        <a href="contact-me.html">Contact Me</a>
-    </nav>
+
     <main>
+        <section class="section bio">
+            <p class="send">Who?</p>
+            <div class="receive dots show">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <p class="receive bio hide">I'm a computer science major entering my third year at Boston University. I like reading scary stories,
+                watching movie recaps, and playing mobile games. I get most of my dopamine from TikTok. But my gains?
+                I get those at the gym. If you asked me what I was listening to on street I would say Tate McRae. I just 
+                got started in web development and I really like it so far. My goal right now is to bring flashy, modern animations
+                and effects to my sites.
+            </p>
+        </section>
         <section class="portfolio">
             <h2>Here's a few samples of my work:</h2>
-            <ul>
-                <li>
-                    <span>OCaml Interpreter</span>
-                    <p>A CS320 class project, the interpeter parsed through a string of commands in a stack language to
-                        generate commands in a term language. These commands were then executed. Also could translate
-                        commands in term language to stack language.
-                    </p>
-                </li>
-                <li>
-                    <span><a href="https://thienantran010.github.io/fortune%20cookie/index.html">Fortune Cookie</a></span>
-                    <p>Gives you a fortune!</p>
-                </li>
-            </ul>
+                <div class="img-container">
+                    <img src="images/OCaml.png">
+                </div>
+                <div class="img-container">
+                    <a href="https://thienantran010.github.io/fortune%20cookie/index.html" target="_blank">
+                        <img src="images/cookie.png">
+                    </a>
+                </div>
+                <div class="img-container coming-soon">
+                    <img src="images/new-project-coming-soon.jpg">
+                </div>
+                <div class="img-container coming-soon">
+                    <img src="images/new-project-coming-soon.jpg">
+                </div>
+                <div class="img-container coming-soon">
+                    <img src="images/new-project-coming-soon.jpg">
+                </div>
+                <div class="img-container coming-soon">
+                    <img src="images/new-project-coming-soon.jpg">
+                </div>
         </section>
-        <section class="work">
+        <section class="exp">
             <h2>I also have a bunch of experience in non-technical roles.</h2>
             <ul>
                 <li>
-                    <span>Volunteer Teacher's Aide</span>
-                    <p>I ensured that summer school at Cathedral Academy at Pompei (CAP) was a smooth experience for everyone involved. I troubleshooted technical issues for the teachers, 
-                        assisted students with their tasks, and ran general errands like printing papers.
-                    </p>
+                    <img class="left" src="images/ta.jpg">
+                    <div class="text-block">
+                        <span>Volunteer Teacher's Aide</span>
+                        <p>I ensured that summer school at Cathedral Academy at Pompei (CAP) was a smooth experience for everyone involved. I troubleshooted technical issues for the teachers, 
+                            assisted students with their tasks, and ran general errands like printing papers.
+                        </p>
+                    </div>
                 </li>
                 <li>
-                    <span>Maintenance Worker</span>
-                    <p>I used to work inside CAP. I washed the floors, scraped tape off the walls, and relocated heavy furniture and 
-                        books. Nowadays, I work outside, cleaning up the trash on school and parish grounds.</p>
+                    <img class="right" src="images/maintenance.webp">
+                    <div class="text-block">
+                        <span>Maintenance Worker</span>
+                        <p>I used to work inside CAP. I washed the floors, scraped tape off the walls, and relocated heavy furniture and 
+                            books. Nowadays, I work outside, cleaning up the trash on school and parish grounds.</p>
+                    </div>
                 </li>
                 <li>
-                    <span>Food Service Worker</span>
-                    <p>I used to work in Boston University's dining hall. I prepared meals and served them to the hundreds of 
-                        students who visited each day.  </p>
+                    <img class="left" src="images/food-service.jpeg">
+                    <div class="text-block">
+                        <span>Food Service Worker</span>
+                        <p>I used to work in Boston University's dining hall. I prepared meals and served them to the hundreds of 
+                            students who visited each day.  </p>
+                    </div>
                 </li>
                 <li>
-                    <span>Office Assistant</span>
-                    <p>During the school year, I work in Boston University's Development and Alumni Relations office.
-                        I answer emails, phone calls, and questions about events, alumni, and services. I also build 
-                        event pages and maintain the alumni database.</p>
+                    <img class="right" src="images/office.png">
+                    <div class="text-block">
+                        <span>Office Assistant</span>
+                        <p>During the school year, I work in Boston University's Development and Alumni Relations office.
+                            I answer emails, phone calls, and questions about events, alumni, and services. I also build 
+                            event pages and maintain the alumni database.</p>
+                    </div>
                 </li>
             </ul>
         </section>
 
-    
+        <section class="testimonials">
+            <h2>See what people say about me: </h2>
+            <div class="card">
+                <div class="card__content">
+                    <div class="card__front">
+                        <img src="images/bill-gates.webp">     
+                    </div>
+                    <div class="card__back">
+                        <h3>Bill Gates</h3>
+                        <p>he's an ok coder lol</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    <div class="card__front">
+                        <img src="images/bill-gates.webp">     
+                    </div>
+                    <div class="card__back">
+                        <h3>Bill Gates</h3>
+                        <p>he's an ok coder lol</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    <div class="card__front">
+                        <img src="images/bill-gates.webp">     
+                    </div>
+                    <div class="card__back">
+                        <h3>Bill Gates</h3>
+                        <p>he's an ok coder lol</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    <div class="card__front">
+                        <img src="images/bill-gates.webp">     
+                    </div>
+                    <div class="card__back">
+                        <h3>Bill Gates</h3>
+                        <p>he's an ok coder lol</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    <div class="card__front">
+                        <img src="images/bill-gates.webp">     
+                    </div>
+                    <div class="card__back">
+                        <h3>Bill Gates</h3>
+                        <p>he's an ok coder lol</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    <div class="card__front">
+                        <img src="images/bill-gates.webp">     
+                    </div>
+                    <div class="card__back">
+                        <h3>Bill Gates</h3>
+                        <p>he's an ok coder lol</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     <footer>
-        <a href="mailto:ttran@bu.edu">Email me! ttran010@bu.edu</a>
+        <a href="mailto:ttran@bu.edu">ttran010@bu.edu</a>
         <a href="https://github.com/thienantran010"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/thienan-tran-35176620b/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="wall.html">The Wall</a>
+        <a href="contact-me.html">Contact Me Form</a>
     </footer>
-
   </body>
 </html>
