@@ -42,7 +42,8 @@ label {
 
 input[type="submit"] {
     margin-top: 2rem;
-    width: 3rem;
+    width: 7rem;
+    font-size: 2rem;
 }
 
 /* posts */
@@ -63,8 +64,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 1rem;
     padding: 3rem;
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - 6rem);
 }
 
 footer a {
